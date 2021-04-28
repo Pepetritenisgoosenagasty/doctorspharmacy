@@ -1,0 +1,27 @@
+%btn {
+  display: inline-block;
+  border-width: 12px !important;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: $font-stack;
+  font-weight: 700 !important;
+  background-color: rgba(250, 152, 58, 1);
+  color: $default-color;
+  padding: 0.3em 3em !important;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+  &:hover {
+    color: $default-color;
+    background-color: $light-secondary-color;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  @extend %btn;
+}
+// .btn-secondary {
+//   @extend %btn;
+//   @include set-background($secondary-color);
+// }

@@ -1,0 +1,42 @@
+@import "./color";
+
+// set color function
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// mixins
+@mixin set-background($color) {
+  color: set-text-color($color);
+  background-image: radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(1, 77, 183, 0.9) 100%
+    ),
+    url(/assets/bg2.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Margin and Padding Classes
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $spaces in $spaceamounts {
+  .m-#{$spaces} {
+    margin: #{$spaces}rem;
+  }
+  .my-#{$spaces} {
+    margin: #{$spaces}rem 0;
+  }
+
+  .p-#{$spaces} {
+    padding: #{$spaces}rem;
+  }
+  .py-#{$spaces} {
+    padding: #{$spaces}rem 0;
+  }
+}

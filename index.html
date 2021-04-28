@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/jquery.min.js"></script>
+    <title>Welcome DoctorsPharmacy</title>
+  </head>
+  <body>
+       <!-- Header -->
+  <header id="header">
+      <a class="logo" href="#">Doctors<span>Pharmacy</span></a>
+      <ul id="nav">
+          <li class="active"><a href="#home" onclick="toggle()">Home</a></li>
+          <li><a href="#services" onclick="toggle()">Services</a></li>
+          <li><a href="#about" onclick="toggle()">About Us</a></li>
+          <li><a href="#contact" onclick="toggle()">Contact Us</a></li>
+      </ul>
+  
+   <div class="toggle d-none" onclick="toggle()">
+
+   </div>
+</header>
+ <!-- /Header -->
+
+ <!-- Banner -->
+ <section class="banner" id="home">
+   <div class="container text">
+    <p>Free Delivery To Your Doorstep</p>
+    <h1>Your #1 Medicine Shop</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, qui.</p>
+    <div class="btn-wrapper">
+      <a class="btn">talk to a pharmacist</a>
+    </div>
+    
+   </div>
+   <div class="banner__svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#fff" fill-opacity="1" d="M0,224L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
+  </div>
+ </section>
+ <!-- /Banner -->
+
+ <!-- Advert -->
+ <section class="advert container">
+    <div class="row">
+       <div class="col-lg-8 col-sm-12 col-md-12" >
+           <div class="advert-banner-1" >
+              <p>Summer Sales</p>
+               <h1>Up to 35% off all Dietry <br/> Supplement</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+           </div>
+       </div>
+       <div class="col-lg-4 col-sm-12 col-md-12">
+        <div class="advert-banner-2" >
+          
+       </div>
+       <!-- <div class="advert-banner-2 my-4" >
+        <h4>20% Off All Refill & Perscriptions</h4>
+    </div>
+    <div class="advert-banner-2">
+      <h4>Free Children Vacination</h4>
+  </div> -->
+    </div>
+    </div>
+  </section>
+ <!-- Advert -->
+
+ <!-- Products -->
+<section class="product__features">
+  <div class="product__features-text container text-center">
+    <h4>Featured Products</h4>
+    <h2>We Keep the Essentials In Stock</h2>
+    <p>Providing Doctor Approved Medicines & Health Supplements At Affordable Prices</p>
+   
+  </div>
+   <div class="product__features-tabs container">
+    <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-medicine-tab" data-bs-toggle="pill" data-bs-target="#pills-medicine" type="button" role="tab" aria-controls="pills-medicine" aria-selected="true">Medicines</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-vitamins-tab" data-bs-toggle="pill" data-bs-target="#pills-vitamins" type="button" role="tab" aria-controls="pills-vitamins" aria-selected="false">Vitamins</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-wellness-tab" data-bs-toggle="pill" data-bs-target="#pills-wellness" type="button" role="tab" aria-controls="pills-wellness" aria-selected="false">Wellness</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-nutrition-tab" data-bs-toggle="pill" data-bs-target="#pills-nutrition" type="button" role="tab" aria-controls="pills-nutrition" aria-selected="false">Nutrition</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane show active" id="pills-medicine" role="tabpanel" aria-labelledby="pills-medicine-tab">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-12">
+            <h3>Medicine is Avaliable for the Following; </h3>
+            <div class="mt-3">
+              <p>01. Cough</p>
+              <p>02. Cold & Flu</p>
+              <p>03. Pain Relief</p>
+              <p>04. Allegy</p>
+              <p>05. Digestive</p>
+              <p>06. Nausea</p>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-12">
+            <div class="gal">
+	
+              <img src="/assets/meds/md1.jpeg" alt="">
+              <img src="/assets/meds/md2.jpeg" alt="">
+              <img src="/assets/meds/md3.jpeg" alt="">
+              <img src="/assets/meds/md4.jpeg" alt="">
+              <img src="/assets/meds/md5.jpeg" alt="">
+              <img src="/assets/meds/md6.jpeg" alt="">     
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="pills-vitamins" role="tabpanel" aria-labelledby="pills-vitamins-tab">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-12">
+            <h3>Vitamins in store; </h3>
+            <div class="mt-3">
+              <p>01. Multivitamins</p>
+              <p>02. Calcium</p>
+              <p>03. Vitamins A-K</p>
+              <p>04. Fish Oil</p>
+              <p>05. Immunity</p>
+              <p>06. Energy</p>
+            </div>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="gal">
+              <img src="/assets/meds/md7.jpeg" alt="">
+              <img src="/assets/meds/md8.jpeg" alt="">
+              <img src="/assets/meds/md9.jpeg" alt="">
+              <img src="/assets/meds/md10.jpeg" alt="">
+              <img src="/assets/meds/md13.jpeg" alt="">
+              <img src="/assets/meds/md12.jpeg" alt="">     
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="pills-wellness" role="tabpanel" aria-labelledby="pills-wellness-tab">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-12">
+            <h3>Impove your Wellness </h3>
+            <div class="mt-3">
+              <p>01. Hair Care</p>
+              <p>02. Oral Care</p>
+              <p>03. Pregnancy</p>
+              <p>04. Eye Solutions</p>
+              <p>05. Skin Care</p>
+              <p>06. Cosmetics</p>
+            </div>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="gal">
+              <img src="/assets/meds/md14.jpeg" alt="">
+              <img src="/assets/meds/md3.jpeg" alt="">
+              <img src="/assets/meds/md16.jpeg" alt="">
+              <img src="/assets/meds/md17.jpeg" alt="">
+              <img src="/assets/meds/md7.jpeg" alt="">
+              <img src="/assets/meds/md5.jpeg" alt="">     
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="pills-nutrition" role="tabpanel" aria-labelledby="pills-nutrition-tab">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-12">
+            <h3>Nitritional Values </h3>
+            <div class="mt-3">
+              <p>01. Weight Loss</p>
+              <p>02. Nutrition Bars</p>
+              <p>03. Protein</p>
+              <p>04. Ketones</p>
+              <p>05. Energy</p>
+              <p>06. Appetite</p>
+            </div>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="gal">
+              <img src="/assets/meds/md4.jpeg" alt="">
+              <img src="/assets/meds/md5.jpeg" alt="">
+              <img src="/assets/meds/md8.jpeg" alt="">
+              <img src="/assets/meds/md13.jpeg" alt="">
+              <img src="/assets/meds/md16.jpeg" alt="">
+              <img src="/assets/meds/md20.jpeg" alt="">     
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- <div class="product__svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f4f4f4" fill-opacity="1" d="M0,224L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
+  </div> -->
+</section>
+ <!--/ Products -->
+ <!-- Services -->
+
+<section class="services" id="services">
+   <div class="services__text container">
+     <h4>What We Offer</h4>
+     <h1>The One Stop Pharmacy</h1>
+     <p>Our Medicines are Doctor Approved and Trusted By Doctors & Patients Around the Country.</p>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-4 col-md-6 col-12">
+         <div class="card">
+          <div class="card__text-header d-flex justify-content-between">
+            <h5>Tablets</h5>
+            <span class="box-icon"><i class="fas fa-dna"></i></span>
+          </div>
+          <div class="card__text-header-list">
+            <p>Coated Tablet</p>
+            <p>Uncoated Tablet</p>
+            <p>Chewing Tablet</p>
+          </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="card__text-header d-flex justify-content-between">
+            <h5>Powders</h5>
+            <span class="box-icon">
+              <i class="fas fa-pills"></i>
+            </span>
+          </div>
+          <div class="card__text-header-list">
+            <p>For External Use</p>
+            <p>For Internal Use</p>
+            <p>Dividen Tablet</p>
+          </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="card__text-header d-flex justify-content-between">
+            <h5>Capsules</h5>
+            <span class="box-icon">
+              <i class="fas fa-capsules"></i>
+            </span>
+          </div>
+          <div class="card__text-header-list">
+            <p>Sleep Aids</p>
+           <p>Digestive Health</p>
+           <p>Pain Relief</p>
+          </div>
+         </div>
+      </div>
+     </div>
+    
+     <div class="row mt-4">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="card__text-header d-flex justify-content-between">
+            <h5>Lollipops</h5>
+            <span class="box-icon">
+              <i class="far fa-lemon"></i>
+            </span>
+          </div>
+          <div class="card__text-header-list">
+            <p>Dietary</p>
+            <p>Weight Loss</p>
+            <p>Analgesic</p>
+          </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="card__text-header d-flex justify-content-between">
+            <h5> Syrups</h5>
+            <span class="box-icon">
+              <i class="fas fa-eye-dropper"></i>
+            </span>
+          </div>
+          <div class="card__text-header-list">
+            <p>Antitussives</p>
+            <p>Expectorants</p>
+            <p>Antihistamines</p>
+          </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-12">
+      <div class="card">
+        <div class="card__text-header d-flex justify-content-between">
+          <h5>Suspensions</h5>
+          <span class="box-icon">
+            <i class="fas fa-flask"></i>
+          </span>
+        </div>
+        <div class="card__text-header-list">
+          <p>Pain relief</p>
+          <p>Child health care</p>
+          <p>Fever reduction</p>
+        </div>
+       </div>
+     </div>
+    </div>
+   </div>
+</section>
+ <!--/ Services -->
+ <section class="about" id="about">
+  <div class="about__text container">
+    <h4>Who we are</h4>
+    <h1>About Our Pharmacy</h1>
+    <p>Sourcing Only the Highest Quality Products</p>
+  </div>
+  <div class="about__content container">
+    <div class="row">
+      <div class="col-lg-12 col-12 text-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et dolore necessitatibus voluptatum natus odit officia dignissimos, beatae amet ex, fugiat quod! Laudantium maxime numquam voluptatum consequatur, natus architecto earum modi corrupti nihil deserunt. Adipisci ipsa maxime autem cupiditate corporis.</p>      </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center about__card">
+     <span class="icon">
+      <i class="fas fa-credit-card"></i>
+     </span>
+      <div class="product">
+        <h5>Affordable Prices</h5>
+        <p>Our approach combines <br /> dedication and professionalism.</p>
+     </div>
+  
+  </div>
+  <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center  about__card">
+    <span class="icon">
+      <i class="fas fa-user-shield"></i>
+     </span>
+    <div class="product">
+      <h5>Exellent Customer Service</h5>
+      <p>Our approach combines <br /> dedication and professionalism.</p>
+   </div>
+  </div>
+ <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center  about__card">
+  <span class="icon">
+    <i class="fas fa-prescription-bottle-alt"></i>
+   </span>
+  <div class="product">
+    <h5>Compounding</h5>
+    <p>Our approach combines <br /> dedication and professionalism.</p>
+ </div>
+ </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center  about__card">
+      <span class="icon">
+        <i class="fas fa-syringe"></i>
+       </span>
+      <div class="product">
+        <h5>Immunization</h5>
+        <p>Our approach combines <br /> dedication and professionalism.</p>
+     </div>
+  
+  </div>
+  <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center  about__card">
+    <span class="icon">
+      <i class="fas fa-fill-drip"></i>
+     </span>
+    <div class="product">
+      <h5>Order or Refill Perscriptions</h5>
+      <p>Our approach combines <br /> dedication and professionalism.</p>
+   </div>
+  </div>
+ <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center aliign-content-center  about__card">
+  <span class="icon">
+    <i class="fas fa-heartbeat"></i>
+   </span>
+  <div class="product">
+    <h5>Medical Consultation</h5>
+    <p>Our approach combines <br /> dedication and professionalism.</p>
+ </div>
+ </div>
+  </div>
+ </section>
+
+ <section class="customers" >
+  <div class="customers__text container">
+    <h4>Meet Our Customers</h4>
+    <h1>Doctor & Customer Approved</h1>
+    <p>Trusted By Thousands Of Customers</p>
+  </div>
+  <div class="customers__content ">
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div class="customers__content-card">
+          <img src="/assets/user.jpeg" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore similique dicta magnam explicabo sapiente qui expedita vel quasi. Similique!</p>
+         <h5>Dr. Adjaloko Edward</h5>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="customers__content-card">
+          <img src="/assets/user.jpeg" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore similique dicta magnam explicabo sapiente qui expedita vel quasi. Similique!</p>
+         <h5>Dr. Adjaloko Edward</h5>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="customers__content-card">
+          <img src="/assets/user.jpeg" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore similique dicta magnam explicabo sapiente qui expedita vel quasi. Similique!</p>
+         <h5>Dr. Adjaloko Edward</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="customers__svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f4f4f4" fill-opacity="1" d="M0,224L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
+  </div> -->
+ </section>
+
+ <section class="contact" id="contact">
+  <div class="contact__text container">
+    <h4>Contact Us</h4>
+    <h1>We will Love To Hear From You</h1>
+  </div>
+  <div class="row contact__content">
+    <div class="col-lg-7 col-12">
+      <div class="row">
+        <div class="col-6">
+          <span>
+            <i class="fa fa-phone"></i>
+          </span>
+          <h5>Call Us On</h5>
+          <p>(432) 237-3010</p>
+        </div>
+        <div class="col-6">
+          <span>
+            <i class="fa fa-envelope"></i>
+          </span>
+          <h5>Email</h5>
+          <p>info@gmail.com</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-6">
+          <span>
+            <i class="fa fa-map"></i>
+          </span>
+          <h5>Location</h5>
+          <p>N/A</p>
+        </div>
+        <div class="col-6">
+          <span>
+            <i class="fa fa-user-plus"></i>
+          </span>
+          <h5>Working Hours</h5>
+          <p>Monday-Friday: 9:00AM - 5:00PM <br/> Saturday: 10:00AM - 2:00PM</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 col-12 contact__form">
+      <form action="">
+        <div class="form-group">
+          <input type="text" class="form-control-sm" placeholder="Name">
+        </div>
+        <div class="form-group my-3">
+          <input type="email" class="form-control-sm" placeholder="Email">
+        </div>
+        <div class="form-group">
+          
+          <textarea name="" id="" cols="5" rows="5" class="form-control-sm" placeholder="Message"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" class=" btn-primary btn-block" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+ </section>
+
+ <footer>
+   <p>&COPY; 20121 DoctorsPharmacy. All Rights Reserved</p>
+ </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
