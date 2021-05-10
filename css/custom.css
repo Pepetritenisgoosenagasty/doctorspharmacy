@@ -68,7 +68,6 @@
   overflow: auto; }
 
 .btn {
-  display: inline-block;
   border-width: 12px !important;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 100px;
@@ -85,7 +84,7 @@
     background-color: #d39255; }
 
 .btn {
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 * {
   padding: 0;
@@ -119,7 +118,7 @@ header {
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
-  z-index: 100000; }
+  z-index: 10000; }
   header ul li.active a {
     border-bottom: 3px solid #0e6cff;
     padding: 0.7em 0;
@@ -174,7 +173,8 @@ header {
   color: #333;
   background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 20%, rgba(1, 77, 183, 0.9) 100%), url(/assets/bg2.jpg) !important;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 1000; }
   .banner .text {
     padding: 110px 0 160px 0;
     color: #fff; }
@@ -199,18 +199,21 @@ header {
   height: 570px; }
   .advert-banner-1 {
     height: 410px;
-    background-image: linear-gradient(rgba(1, 77, 183, 0.7), rgba(1, 77, 183, 0.5)), url(/assets/bg5.jpeg) !important;
+    background-image: url(/assets/bg5.jpeg) !important;
     background-position: 50% 50%;
     background-size: cover;
     padding: 100px 60px;
     color: #fff;
-    border-radius: 10px; }
-  .advert-banner-2 {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important; }
+  .advert-banner-2 img {
     height: 410px;
-    background: url(/assets/wk.jpeg);
+    background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 10px; }
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    margin-left: 50px; }
 
 .product__features {
   position: relative;
@@ -335,13 +338,18 @@ header {
         color: #c4c4c4; }
 
 .about {
-  height: 600px;
+  height: 700px;
   position: relative; }
+  .about h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #0e6cff; }
   .about__content {
     height: 100%; }
   .about__text {
     text-align: center;
-    padding: 80px 0 20px 0; }
+    padding: 80px 0 0 0; }
     .about__text h4 {
       font-family: "Montserrat", sans-serif !important;
       font-size: 1.7rem;
@@ -355,23 +363,81 @@ header {
     .about__text p {
       font-family: "Montserrat", sans-serif !important;
       font-size: 0.9rem; }
+  .about__content p {
+    font-size: 0.8rem; }
   .about .icon {
     margin-right: 20px; }
     .about .icon i {
       font-size: 30px;
       color: #0e6cff; }
-  .about .product h5 {
-    font-size: 1rem;
-    font-weight: 500; }
-  .about .product p {
-    font-size: 0.8rem; }
-  .about__card {
-    padding: 20px 10px 10px 10px;
+  .about .goal {
+    max-width: 1000px !important;
+    margin: 0 auto; }
+  .about .product {
+    text-align: center;
+    padding: 20px 30px 10px 30px;
     border: 1px solid transparent;
     border-radius: 10px;
     transition: all 0.5s ease-in-out; }
-    .about__card:hover {
+    .about .product h5 {
+      font-size: 1rem;
+      font-weight: 500; }
+    .about .product p {
+      font-size: 0.8rem; }
+    .about .product i {
+      font-size: 50px;
+      color: #0e6cff; }
+    .about .product:hover {
       box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important; }
+
+.who_we_are {
+  max-width: 900px !important;
+  margin: 0 auto;
+  height: 470px; }
+  .who_we_are .img {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    background: url(/assets/dr.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease;
+    backface-visibility: hidden; }
+  .who_we_are .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0e6cff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    opacity: 0.7; }
+  .who_we_are .img:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .who_we_are .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .who_we_are .texts {
+    width: 450px;
+    text-align: justify; }
 
 .customers {
   height: 600px;
@@ -582,15 +648,34 @@ footer {
 
   .advert {
     height: 1000px; }
+    .advert-banner-2 {
+      margin-left: -20px !important; }
 
   .advert-banner-1 {
     text-align: center;
     margin-bottom: 30px; }
 
   .product__features {
-    height: 1800px; }
+    height: 2000px; }
     .product__features-tabs .gal {
       column-count: 1; }
+
+  .product {
+    text-align: center;
+    padding: 20px 30px 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out; }
+    .product h5 {
+      font-size: 1rem;
+      font-weight: 500; }
+    .product p {
+      font-size: 0.8rem; }
+    .product i {
+      font-size: 50px;
+      color: #0e6cff; }
+    .product:hover {
+      box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important; }
 
   .services {
     height: 2150px; }
@@ -598,7 +683,7 @@ footer {
       margin-top: 30px; }
 
   .about {
-    height: 1300px; }
+    height: 1200px; }
     .about .row p {
       text-align: justify; }
 
@@ -613,6 +698,56 @@ footer {
       padding-right: 10px; }
       .customers__content .col-12 {
         margin-bottom: 50px; }
+
+  .who_we_are {
+    height: 760px; }
+    .who_we_are .img {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      border-radius: 10px;
+      background: url(/assets/dr.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.5s ease;
+      backface-visibility: hidden; }
+    .who_we_are .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0e6cff;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      opacity: 0.7; }
+    .who_we_are .img:hover .overlay {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+    .who_we_are .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    .who_we_are .texts {
+      width: 450px;
+      text-align: justify; }
+    .who_we_are .texts {
+      margin-top: 10px;
+      width: 100%; }
 
   .contact {
     height: 1100px;

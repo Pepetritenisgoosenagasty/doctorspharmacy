@@ -87,6 +87,10 @@
 
   .advert {
     height: 1000px;
+
+    &-banner-2 {
+      margin-left: -20px !important;
+    }
   }
 
   .advert-banner-1 {
@@ -95,12 +99,38 @@
   }
 
   .product__features {
-    height: 1800px;
+    height: 2000px;
 
     &-tabs {
       .gal {
         column-count: 1;
       }
+    }
+  }
+
+  .product {
+    text-align: center;
+    padding: 20px 30px 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    h5 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    i {
+      font-size: 50px;
+      color: $primary-color;
+    }
+
+    &:hover {
+      // border: 1px solid #20292f31;
+      box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
     }
   }
 
@@ -115,7 +145,7 @@
   }
 
   .about {
-    height: 1300px;
+    height: 1200px;
 
     .row {
       p {
@@ -142,6 +172,70 @@
       .col-12 {
         margin-bottom: 50px;
       }
+    }
+  }
+
+  .who_we_are {
+    height: 760px;
+
+    .img {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      border-radius: 10px;
+
+      background: url(/assets/dr.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $primary-color;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      opacity: 0.7;
+    }
+
+    .img:hover .overlay {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .texts {
+      width: 450px;
+      text-align: justify;
+    }
+
+    .texts {
+      margin-top: 10px;
+      width: 100%;
     }
   }
 

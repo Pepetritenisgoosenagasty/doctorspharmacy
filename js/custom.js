@@ -31,12 +31,12 @@ function toggle(){
         }
       });
 
-
-      $('.carousel').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
+      $('.owl-carousel').owlCarousel({
+        margin:10,
+        loop:true,
+        autoWidth:true,
+        // items:4
+    })
       
       
     });

@@ -41,7 +41,7 @@ header {
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
-  z-index: 100000;
+  z-index: 10000;
   ul li.active a {
     border-bottom: 3px solid $primary-color;
     padding: 0.7em 0;
@@ -113,6 +113,7 @@ header {
   position: relative;
   height: 600px;
   @include set-background($light-color);
+  z-index: 1000;
 
   .text {
     padding: 110px 0 160px 0;
@@ -162,24 +163,23 @@ header {
 
   &-banner-1 {
     height: 410px;
-    background-image: linear-gradient(
-        rgba(1, 77, 183, 0.7),
-        rgba(1, 77, 183, 0.5)
-      ),
-      url(/assets/bg5.jpeg) !important;
+    background-image: url(/assets/bg5.jpeg) !important;
     background-position: 50% 50%;
     background-size: cover;
     padding: 100px 60px;
     color: $default-color;
     border-radius: 10px;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
   }
 
-  &-banner-2 {
+  &-banner-2 img {
     height: 410px;
-    background: url(/assets/wk.jpeg);
+    background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: contain;
     border-radius: 10px;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    margin-left: 50px;
   }
 }
 
@@ -380,8 +380,15 @@ header {
 }
 
 .about {
-  height: 600px;
+  height: 700px;
   position: relative;
+
+  h3 {
+    font-family: $font-montserrate !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: $primary-color;
+  }
 
   &__content {
     height: 100%;
@@ -389,7 +396,7 @@ header {
 
   &__text {
     text-align: center;
-    padding: 80px 0 20px 0;
+    padding: 80px 0 0 0;
     h4 {
       font-family: $font-montserrate !important;
       font-size: 1.7rem;
@@ -410,6 +417,12 @@ header {
     }
   }
 
+  &__content {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
   .icon {
     margin-right: 20px;
 
@@ -419,7 +432,17 @@ header {
     }
   }
 
+  .goal {
+    max-width: 1000px !important;
+    margin: 0 auto;
+  }
+
   .product {
+    text-align: center;
+    padding: 20px 30px 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
     h5 {
       font-size: 1rem;
       font-weight: 500;
@@ -428,17 +451,77 @@ header {
     p {
       font-size: 0.8rem;
     }
-  }
 
-  &__card {
-    padding: 20px 10px 10px 10px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    i {
+      font-size: 50px;
+      color: $primary-color;
+    }
+
     &:hover {
       // border: 1px solid #20292f31;
       box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
     }
+  }
+}
+
+.who_we_are {
+  max-width: 900px !important;
+  margin: 0 auto;
+  height: 470px;
+
+  .img {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+
+    background: url(/assets/dr.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    opacity: 0.7;
+  }
+
+  .img:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .texts {
+    width: 450px;
+    text-align: justify;
   }
 }
 
